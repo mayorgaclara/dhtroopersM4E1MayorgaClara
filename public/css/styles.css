@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    margin: 10px;
+    margin: 0px;
     font-family: 'Roboto', sans-serif;
     padding: 0px;
 }
@@ -9,134 +9,158 @@ body {
     background: #ebebeb;
 }
 
-    .main-header {  
+    .main-header-top-bar{  
         background-color: #EAC926;
         display: flex;
         flex-wrap: wrap;
-        padding: 2px;
     }
 
-    .logo {
-        width: 250px;
+    .search-button {
+        display: flex;
         text-align: center;
-    }
+        align-items: center;
+        flex: 1 1 auto;
+        justify-content: center;
+        margin-top: 20px;
+        }
+
+    .logo {
+        margin: 15px;
+        height: 50%;
+        width: 50%;
+        flex: 1 1 auto;
+    }   
 
     h1 {
         font-size: 24px
     }
 
+    h2 {
+        font-size: 24px
+    }
+
+    button {
+        padding: 3px 3px;
+        text-align: center;
+        }
+        
     .main-navbar {
-        margin-left: 20px;
-        margin-right: 20px;
-        padding: 10px;
         display: none;
-        list-style: none;
-        text-decoration: none;
-        color: #000;
-        display: inline-block;
+    }
+
+    .barra {
+        background: white;
+        font-size: 12px;
+        color:rgb(59, 59, 59);
     }
     
-    .barra {
-        background-color: #FFF;
-        border: 1px solid #000;
-        outline: none;
-        color: #666;
-        display: flex;
-    }
-
-    .barra, .logo {
-        padding: 2px;
-    }
-
     .burger-menu {
-        color: white;
-        text-align: center;
-        background-color: #03264C;
-        display: inline-flex;
-        padding: 4px 4px;
-        margin-left: 170px;
+        justify-content: center;
+        margin-top: 0px;
+        visibility: visible;
+        background-color: #1259c3;
+        padding: 6px 8px;
+        display: flex;
         border-radius: 3px;
+        text-align: center;
     }
 
-.banner {
-    width: 90%;
-    margin: 0 auto;
-}
+    .burger {
+        font-size: 18px;
+        text-align: center;
+        color: #fff;
+        align-self: center;
+    }
 
-.ultimaVisitaSection {
-    display: flex;
-    flex-wrap: wrap;
-}
+    .main section article i {
+        display: block;
+        background-color: white;
+        color:#39b54a;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        border-radius: 50%;
+        right: 20px;
+        top: -15px;
+    
+    }
 
-.ofertasSection {
-    display: flex;
-    flex-wrap: wrap;
-}
+    .texto-cuotas {
+        font-size: 12px;
+    }
+
+    .banner {
+        margin-top: 15px;
+        margin-top: 10px;
+        text-align: center;
+        flex: 5 1 100%;
+    }
+
+    .ultima-visita, .ofertas {
+        background: #ebebeb;
+        margin: auto;
+        align-content: right;
+        width: 90%;
+    }
+
+    .catalogo-productos {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .producto-completo {
+        background-color: #fff;
+        display: flex;
+        flex-flow: column;
+        flex-wrap: nowrap;
+        margin: 20px;
+        padding-bottom: 8px;
+    }
+
+    .producto-info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .camion {
+        color: #39b54a;
+        display: flex;
+        flex-flow: column;
+        padding: 0px 40px;
+        flex-grow: 1;
+        text-align: right;
+        margin-top: 0px;
+        margin-bottom: 15px;
+        border-top: solid 1px #ebebeb;
+        border-radius: 50%;
+    }
+
     .precio {
         font-size: 18px;   
-        width: 30%;
+        flex-grow: 30%;
+        margin-bottom: 0px;
     }
 
     .descuento {
         font-size: 16px;
         font-weight: normal;
-        color: #39b54a;   
+        color: #39b54a;
+        text-align: left;
+        flex-grow: 70%;
+        margin-top: 0px;   
     }
 
     .descripcion {
         font-size: 16px;
         font-weight: normal;
+        flex: 5 1 100%; 
         color: #666; 
-        margin-top: 20px;  
+        margin-top: 20px; 
+        text-align: left;
     }
 
-    h3 {
-        color: #666;
-        margin: 20px 0px;
-    }
-
-.centrado{
-    text-align: center;
-}
-
-.barra{
-    color: #666;
-}
-
-article {
-    background-color: white;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #ebebeb;
-    margin: 10px 0px;
-}
-
-.articulo {
-    background-color: white;
-    width: 100%;
-    flex-wrap: wrap;
-    align-items: baseline;
-    border-top: 1px solid #ebebeb;
-    position: relative;
-    padding: 15px;
-}
-
-article img {
-    width: 100%;
-}
-
-.articulo i {
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    border-radius: 50%;
-    right: 20px;
-    top: -15px;
-    color:#39b54a
-
-}
 footer{
     background-color: #fff;
     background-size: cover;
@@ -151,74 +175,66 @@ footer h3{
     font-size: 20px;
 }
 
+footer p {
+    margin-top: 5px;
+}
+
 .icon-footer {
     color:#1259c3;
+    padding-top: 15px;
+    margin-bottom: 3px;
     text-align: center;
     font-size: 2em;
 }
 
-@media (min-width: 768px){
+h5 {
+    margin-top: 20px;
+}
 
-    .main-header-top-bar{
+@media (min-width: 361px){
+
+    .main-navbar{
         display: flex;
         justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        visibility: visible;
     }
 
-    .textocuotas {
-        max-width: 350px;
-        text-align: right;
+    .navbar-list-1, .navbar-list-2 {
+        color: black;
+        text-align: left;
+        text-decoration: none;
     }
-    
-    div.burger-menu{
+
+    .navbar-list-1 {
+        margin-left: 25px;
+    }
+
+    .navbar-list-2 {
+        margin-right: 25px;
+    }
+
+    .burger-menu{
         display: none;
     }
 
-    .main-navbar {
+    .textocuotas {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
     }
+
+    .producto-completo {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 40%;
+    }
+
+    .descripcion {
+        visibility: visible;
+    }
+
+}   
     
-    .ultimaVisitaDiv, .ofertasDiv{
-        width: 22%;
-    }
-       
-        main-nav ul{
-            display: flex;    
-            font-size: 16px;        
-
-        }
-        main-nav li{
-            margin: 0 8px;
-            
-        }
-    
-        .main-header-top-bar{
-            display: flex;
-            flex-flow: row;
-            align-items: center;
-            justify-content: space-between;
-        } 
-
-        .main-header-top-bar, .textocuotas{
-            text-align: right;
-        }
-        
-        .barra{
-            display: flex;
-            width: 40%;
-            height: 40px;
-            margin: auto;
-                       
-        }
-        .logo{
-            margin-right: 12px;
-        }
-
-    footer{
-        font-size: 15px;
-    }
-
-}
 
 @media (min-width: 1200px){
     .logo{
@@ -251,5 +267,4 @@ footer h3{
     footer{
         font-size: 20px;
     }
-
 }
