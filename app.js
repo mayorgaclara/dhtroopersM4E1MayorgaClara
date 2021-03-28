@@ -9,6 +9,10 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './views/home.html'));
 });
 
+app.get('/form', (req, res) => {
+    res.sendFile(path.join(__dirname, './views/form.html'));
+});
+
 app.listen(port, () => {
     console.log('Example app listening on port '+ port);
 });

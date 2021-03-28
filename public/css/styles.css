@@ -208,6 +208,34 @@ h5 {
     margin-top: 20px;
 }
 
+.create-form {
+    padding: 20px 15px;
+}
+
+.control-formulario {
+    margin-bottom: 15px;
+}
+
+.control-formulario label {
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+
+.control {
+    width: 100%;
+    padding: 8px;
+}
+
+.boton-formulario {
+    border: none;
+    font-size: 20px;
+    background-color: #39b54a;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px      ;
+}
+
 @media (min-width: 361px){
 
     .main-navbar {
