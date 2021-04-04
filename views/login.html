@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
        
-        <title>Registro</title>
+        <title>Login</title>
     </head>
 
 <body>
@@ -66,77 +66,27 @@
         </section>
     </header>
 
-    <main class="formulario-login">
-        
-        <h1 class="h1-registro">Registro</h1>
 
-        <form action="/crear-usario" method="POST" class="register-form">
+    <main class="login-formulario">
+        <h1 class="login-title">Iniciar Sesión</h1>
+
+        <form action="/crear-producto" method="POST" class="login-form">
             <div class="controlador-formulario">
-                <label for="nombre-apellido">Nombre y Apellido</label>
-                <input type="text" name="nombre-apellido" id="nombre-apellido" required>
-            </div>
-            <div class="controlador-formulario">
-                <label for="user-name">Nombre de Usuari@</label>
-                <input type="text" name="user-name" id="user-name" required>
-            </div>
-            <div class="controlador-formulario">
-                <label for="birth-date">Fecha de Nacimiento</label>
-                <input type="date" name="birth-date" value="yyyy-dd-mm" min="1900-01-01" id="birth-date" required>
-            </div>
-            <div class="controlador-formulario">
-                <label for="adress">Domicilio</label>
-                <input type="text" name="adress" id="domicilio" required>
+                <label for="user-name"></label>
+                <input type="text" name="user-name" id="user-name" placeholder="Nombre de Usuari@" required>
             </div>
 
-            <div class="perfil-usuario">
-                <h4 id="perfil">Perfil del usuario</h4>
-                <label for="comprador" class="perfiles"><input type="radio" name="perfil" value="Comprador" id="comprador">
-                Comprador</label>
-                <label for="vendedor" class="perfiles"><input type="radio" name="perfil" value="Vendedor" id="vendedor">
-                Vendedor</label>
-            </div>
-
-            <div class="perfil-intereses">
-                <h4 class="intereses-usuario">Intereses</h4>
-                <label for="intereses-a" class="intereses">
-                    <input type="checkbox" name="intereses" value="Electro" id="intereses-a">Electro
-                </label>
-                <label for="intereses-b" class="intereses">
-                    <input type="checkbox" name="intereses" value="Moda" id="intereses-b">Moda
-                </label>
-                <label for="intereses-c" class="intereses">
-                    <input type="checkbox" name="intereses" value="Hogar" id="intereses-c">Hogar
-                </label>
-                <label for="intereses-d" class="intereses">
-                    <input type="checkbox" name="intereses" value="Juguetería" id="intereses-d">Juguetería
-                </label>
-                <label for="intereses-e" class="intereses">
-                    <input type="checkbox" name="intereses" value="Vida Sana" id="intereses-e">Vida Sana
-                </label>
-            </div>
-
-            <div class="controlador-formulario">
-                <h4 class="user-img">Foto de Usuario</h4>
-                <input type="file" name="user-img" accept="jpg">
-            </div>
-            <div class="controlador-formulario">
-                <label for="password">Contraseña</label>
-                <input type="password" name="password" id="password">
-            </div>
             <div class="controlador-formulario">
                 <label for="confirm-password">Confirmar Contraseña</label>
-                <input type="password" name="password" id="confirm-password">
+                <input type="password" name="password" id="confirm-password" placeholder="Contraseña" required>
             </div>
 
-            <div class="form-buttons">
-                <button type="reset">Borrar</button>
-                <button type="submit">Registrarse</button>
+            <div class="login-button">
+                <button type ="submit">Ingresar</button>
             </div>
-
         </form>
 
     </main>
-
     
     <footer>
         <section class="footercompleto">
