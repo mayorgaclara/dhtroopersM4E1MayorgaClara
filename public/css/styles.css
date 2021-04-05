@@ -336,7 +336,6 @@ h4#perfil {
         width: 100%;        
         transition: background-color 450ms;
         margin-bottom: 5%;
-        max-width: 150px;
     }
 
     .login-button button:hover{
