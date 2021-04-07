@@ -349,7 +349,8 @@ h4#perfil {
 
 
 @media (min-width: 481px){
-
+   
+    
     .main-navbar {
         display: flex;
         justify-content: space-between;
@@ -383,6 +384,11 @@ h4#perfil {
         display: flex;
         flex-wrap: wrap;
         margin: auto;
+        justify-content: space-between;
+    }
+
+    .producto-completo{
+        width: 43%;
     }
 
     .descripcion {
