@@ -337,7 +337,8 @@ h4#perfil {
         color: white;
         padding: 15px 30px;
         border-radius: 5px;
-        width: 100%;        
+        width: 100%;
+        max-width: 400px;       
         transition: background-color 450ms;
         margin-bottom: 5%;
     }
