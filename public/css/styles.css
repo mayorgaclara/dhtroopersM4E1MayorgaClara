@@ -13,14 +13,27 @@ body {
         background-color: #EAC926;
     }
 
+    .main-header-top-bar {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2%;
+    }
+
     .search-button {
         display: flex;
         justify-content: center;
         padding: 1px;   
         width: 100%;
-        height: 100%;
-
     }
+
+    .logoML img{
+        width: 200px;
+    }
+
+    .search-button {
+        display: flex;               
+    }
+
     .button {
         padding: 3px 5px;
         border-radius: 3px;
@@ -28,15 +41,6 @@ body {
         box-sizing: content-box;
         border-radius: solid 3px #666;
         background: #ebebeb;
-    }
-
-    .search-form {
-        display: flex;
-    }    
-
-    .barra {
-        flex-grow: 1;
-        padding: 5px;
     }
 
     main{
@@ -343,12 +347,20 @@ h4#perfil {
     }
 
 
-@media (min-width: 361px){
+@media (min-width: 481px){
 
     .main-navbar {
         display: flex;
         justify-content: space-between;
         visibility: visible;
+    }
+
+    .search-button{
+        display: flex;
+        width: 70%;
+        height: 40px;
+        margin: auto;
+                   
     }
 
     .navbar-list1, .navbar-list2, a {
@@ -372,21 +384,17 @@ h4#perfil {
         margin: auto;
     }
 
-    .producto-completo {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        width: 40%;
-    }
-
     .descripcion {
         visibility: visible;
     }
 
 }
 
-@media (min-width: 481px) {
+@media (min-width: 781px) {
 
     .main-header-top-bar {
         display: flex;
+        flex-wrap: nowrap;
         justify-content: space-between;
     }
 
@@ -423,6 +431,36 @@ h4#perfil {
     .producto-completo {
         width: 20%;
     }
+    
+    .producto-completo:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 25%;
+    }
+
+    .producto-completo .descripcion{
+        opacity: 0;
+        transition: opacity 400ms;
+    }
+        .producto-completo:hover .descripcion{
+            opacity: 1;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .footercompleto {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        .icon-footer{
+            margin: 20px;
+        }
+    
+        footer p{
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+    
 
     /*CSS REGISTER*/
 
@@ -449,4 +487,4 @@ h4#perfil {
             background-color: #03264C;
         }
 
-}
+    }
